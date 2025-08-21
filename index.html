@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python IDE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- PrismJS Okaidia Theme for dark mode syntax highlighting -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+    <style>
+      /* Custom scrollbar for a better IDE look */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #282a36;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #44475a;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6272a4;
+      }
+      .react-simple-code-editor-container {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-simple-code-editor": "https://esm.sh/react-simple-code-editor@^0.14.1",
+    "@google/genai": "https://esm.sh/@google/genai@^1.15.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "prismjs/": "https://esm.sh/prismjs@^1.30.0/",
+    "prismjs": "https://esm.sh/prismjs@^1.30.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-900">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "name": "Python IDE",
+  "description": "A web-based Python IDE powered by Google's Gemini API. Write and execute Python code directly in your browser and see the output in a real-time console.",
+  "requestFramePermissions": []
+}
